@@ -1,19 +1,22 @@
 {
-  "name": "first-app",
+  "name": "nodejs-1",
   "version": "1.0.0",
-  "description": "first-app",
+  "description": "first-app-node",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev" : "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon ."
   },
-  "keywords": [
-    "node.js",
-    "learning"
-  ],
-  "author": "EOK",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paolaCaushi/assignments_nodejs"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paolaCaushi/assignments_nodej/issues"
+  },
+  "homepage": "https://github.com/paolaCaushi/assignments_nodej#readme",
   "dependencies": {
     "lodash": "^4.17.21",
     "nodemon": "^2.0.16"

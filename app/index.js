@@ -1,16 +1,14 @@
-const calc = require('./calc')
-const concat = require('./concat')
+const _ = require("lodash");
+const fs = require('fs/promises');
 
-const numbersToAdd=[
-    1, 2, 3, 4, 5
-]
+async function readFileAsync() {
+  try {
+    const data = await fs.readFile('data.json', { encoding: 'utf8' });
+    return JSON.parse(data);
+  } catch (err) {
+    return [];
+  }
+}
 
-const numbersToContact=[
-    1, 2, 3, 4, 5
-]
 
-const result = calc.sum(numbersToAdd)
-const result2= concat.concat(numbersToContact)
-console.log(`The result of the sum is ${result}`)
-
-console.log(`The result of the sum is ${result2}`)
+module.exports.readFileAsync = readFileAsync
