@@ -7,6 +7,8 @@ async function readFileAsync() {
     return JSON.parse(data);
   } catch (err) {
     return [];
+    //console.log("Error!");
+    //console.log(err);
   }
 }
 
